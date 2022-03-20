@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    int s = 0;
+    printf("Введите число А: ");
+    scanf("%d", &a);
+    printf("Введите число B: ");
+    scanf("%d", &b);
+    FILE *output;
+    output = fopen("output", "w");
+    while(a<=b){
+        s = a*3;
+        fprintf(output, "%d \n",s);
+        a++;
+    }
+    fclose(output);
+
+    return 0;
+}
