@@ -1,15 +1,16 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
-{        
+{
     char a[50];
+    char *p;
     cin >> a;
-    for (int i = 0; a[i]; i++) {
-        a[i]++;
+    p = a;
+    while (*p){
+        (*p)++;
+        p++;
     }
     cout << a;
-    
     return 0;
 }
