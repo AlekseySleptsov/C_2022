@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+void SquaredSum(double a, double b);
+int main()
+{
+
+    SquaredSum(12.5, 6.4);
+    SquaredSum(12.5, -6.4);
+    return 0;
+}
+void SquaredSum(double a, double b)
+{
+    cout << (a + b) * (a + b) << endl;
