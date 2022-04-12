@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void reverse(char *a){
+    if(*a)
+    reverse(a + 1);
+    cout << *a;
+
+}
+
+int main(){
+    char str [] = "Test string";
+    cout << str << endl;
+    reverse (str);
+    return 0;
+}
