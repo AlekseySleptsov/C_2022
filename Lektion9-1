@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class UnOp{
+public:
+string txt;
+UnOp(string t){
+    txt = t;
+    cout << txt << endl;
+}
+UnOp operator ++(){
+    for(int i = 0; i<6; i++){
+        txt[i] = txt[i] + 1;
+    }
+    cout << txt << endl;
+    return *this;
+}
+
+UnOp operator --(){
+    for(int i = 0; i<6; i++){
+        txt[i] = txt[i] - 1;
+        }
+    cout << txt << endl;
+    return *this;
+}
+};
+
+int main(){
+    UnOp text ("abc123");
+    ++text;
+    --text;
+
+return 0;
+}
